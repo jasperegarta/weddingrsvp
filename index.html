@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envelope Click</title>
+    <link rel="stylesheet" href="stylesheet/envelope.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="envelope-wrapper" id="envelopeWrapper">
+
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdpudVU48zSW1ONvXaVEKunJeiougqzoPjFtEHJILpXCiqCRw/viewform?usp=header"
+                            target="_blank">
+                            Click Here For Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="heart"></div>
+
+        </div>
+    </div>
+
+    <script>
+        const envelope = document.getElementById('envelopeWrapper');
+
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+
+</html>
